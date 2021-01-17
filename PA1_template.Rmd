@@ -104,7 +104,7 @@ for (i in 1:nrow(activity2)) {
 
 
 * Make a panel plot containing a time series plot of the 5-minute interval (x-axis) and the average number of steps taken, averaged across all weekday days or weekend days (y-axis)
-```{r panel plot}
+```{r panelplot}
 stepsPerInterval2 <- aggregate(steps ~ interval + day, activity2, mean, na.rm=TRUE)
 g <- ggplot(data= stepsPerInterval2, aes(x=interval, y=steps))
 g <- g + geom_line() + facet_grid(day~.) + labs(x="5-minute interval", y="steps",title="Average daily activity pattern across all weekdays or weekend days")

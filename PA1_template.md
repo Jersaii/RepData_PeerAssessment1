@@ -212,4 +212,4 @@ g <- g + geom_line() + facet_grid(day~.) + labs(x="5-minute interval", y="steps"
 print(g)
 ```
 
-![plot of chunk panel plot](figure/panel plot-1.png)
+![plot of chunk panelplot](figure/panelplot-1.png)
